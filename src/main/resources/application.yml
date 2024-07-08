@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: wallet
+  datasource:
+    url: jdbc:postgresql://db:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    url: jdbc:postgresql://db:5432/postgres
+    user: postgres
+    password: postgres
+    enabled: true
+    baseline-on-migrate: true
+    out-of-order: true
+    locations: classpath:/sql
+
+
+

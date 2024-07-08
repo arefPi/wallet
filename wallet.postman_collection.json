@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "eb468fc6-936e-41e9-bed5-1f316eb06d8e",
+		"name": "wallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11435023",
+		"_collection_link": "https://cloudy-desert-846353.postman.co/workspace/Team-Workspace~0d57832b-ad98-484e-8eef-012d38980247/collection/11435023-eb468fc6-936e-41e9-bed5-1f316eb06d8e?action=share&source=collection_link&creator=11435023"
+	},
+	"item": [
+		{
+			"name": "get_balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/wallet/balance/user123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wallet",
+						"balance",
+						"user123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_money",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"user123\",\n    \"amount\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/wallet/add-money",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"wallet",
+						"add-money"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
